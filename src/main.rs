@@ -1,4 +1,5 @@
 use clap::{Parser, Subcommand};
+mod utils;
 use comfy_table::{Cell, Color, ContentArrangement, Table, presets::UTF8_FULL};
 use owo_colors::OwoColorize;
 use std::io::{self, Write};
@@ -136,4 +137,3 @@ fn main() {
         Some(Commands::Run { number }) => run_problem(number),
     }
 }
-

@@ -3,7 +3,7 @@ pub fn solve() {
     let mut sum = 0;
     for i in 1..count_till {
         if i % 3 == 0 || i % 5 == 0 {
-            sum += i;
+            sum += i;   
         }
     }
     println!("answer : {}", sum);
